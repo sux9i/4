@@ -3,21 +3,20 @@
 int main()
 {
 	setlocale(LC_ALL, "RUS");
-	char c = '!';
-	int i = 2;
-	float f = 3.14f;
-	double d = 5e-12;
-	printf("char c = %c\n", c);
-	printf("int i = %i\n", i);
-	printf("float f = %f\n", f);
-	printf("double d = %d\n", d);
-	printf("Введите значения с консоли:");
-	puts("Введите char:");
+	char c;
+	int i;
+	float f;
+	double d;
+	printf("Введите символ:\n");
 	scanf_s("%c", &c);
-	puts("Введите int:");
-	scanf_s("%i", &i);
-	puts("Введите float:");
+	printf("Введите целое число:\n");
+	scanf_s("%d", &i);
+	printf("Введите float:\n");
 	scanf_s("%f", &f);
-	puts("Введите double:");
-	scanf_s("%d", &d);
+	printf("Введите double:\n");
+	scanf_s("%lf", &d);
+	printf("c = %c\n", c);
+	printf("i = %d\n", i);
+	printf("f = %f\n", f);
+	printf("d = %lf\n", d);
 }
