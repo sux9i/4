@@ -11,9 +11,13 @@ int main()
 	printf("int i = %i\n", i);
 	printf("float f = %f\n", f);
 	printf("double d = %d\n", d);
-	printf("Введите значения с консоли:");
-	puts("Введите char:");
+	printf("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ СЃ РєРѕРЅСЃРѕР»Рё:");
+	puts("Р’РІРµРґРёС‚Рµ char:");
 	scanf_s("%c", &c);
-
-
+	puts("Р’РІРµРґРёС‚Рµ int:");
+	scanf_s("%i", &i);
+	puts("Р’РІРµРґРёС‚Рµ float:");
+	scanf_s("%f", &f);
+	puts("Р’РІРµРґРёС‚Рµ double:");
+	scanf_s("%d", &d);
 }
