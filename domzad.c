@@ -1,15 +1,15 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <locale.h>
 int main()
 {
 	setlocale(LC_ALL, "RUS");
-	int A, B, C;
+	int A, B, C, res;
 	printf("Вес груза А:");
 	scanf_s("%d", &A);
 	printf("Вес груза B:");
 	scanf_s("%d", &B);
 	printf("Вес груза C:");
 	scanf_s("%d", &C);
-	printf("\nУсловие для разрешения на погрузку:\n");
-	printf("(%d%%5==0) && (%d%%5==0) && (%d%%5==0)", A, B, C);
+	res = ((A % 5 == 0) && (B % 5 == 0) && (C % 5 == 0));
+	printf("Условие для разрешения на погрузку, 1-да, 0-нет: %d\n",res);
 }
