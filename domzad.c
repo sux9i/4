@@ -5,7 +5,6 @@ int gruz(int A, int B, int C)
 {
 int res;
 res = ((A % 5 == 0) && (B % 5 == 0) && (C % 5 == 0));
-	return res;
 }
 int main()
 {
